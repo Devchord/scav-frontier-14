@@ -1,0 +1,40 @@
+- type: emoteSounds
+  id: UnisexYinglet
+  sounds:
+    Scream:
+      collection: YingletScreams
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: YingletCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: YingletSnores
+    Sigh:
+      collection: YingletSigh
+    Honk:
+      collection: BikeHorn
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: YingletDeathGasp
+  params:
+    variation: 0.125
+    #pitch: 2.00

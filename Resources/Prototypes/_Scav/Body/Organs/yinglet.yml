@@ -1,0 +1,71 @@
+- type: entity
+  id: OrganYingletStomach
+  parent: OrganHumanStomach
+  name: yinglet stomach
+  components:
+  - type: Stomach
+    specialDigestible:
+      tags:
+      - Fruit
+      - ReptilianFood
+      - Meat
+      - Pill
+      - Crayon
+      - Paper
+      - Vegetable
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 30
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+  - type: Metabolizer
+    maxReagents: 3
+    metabolizerTypes: [Yinglet]
+    removeEmpty: true
+    groups:
+      - id: Food
+      - id: Drink
+
+- type: entity
+  id: OrganYingletLiver
+  parent: OrganHumanLiver
+  name: yinglet liver
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [Yinglet]
+
+- type: entity
+  id: OrganYingletTongue
+  parent: OrganHumanTongue
+  name: yinglet tongue
+  description: "A fleshy muscle specialized for snapping up clam meat."
+#  components:   #eventually, this will have a custom sprite (probably same for brain?)
+#  - type: Sprite
+#    state: tongue
+
+- type: entity
+  id: OrganYingletKidneys
+  parent: OrganHumanKidneys
+  name: yinglet kidneys
+  description: "Filters toxins from the bloodstream."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [Yinglet]
+
+
+- type: entity
+  id: OrganYingletHeart
+  parent: OrganHumanHeart
+  name: yinglet heart
+  description: "Small and weird heart."
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [Yinglet]
+
+
